@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+
+  portainer:
+    image: portainer/portainer-ee:latest
+    container_name: portainer
+    restart: always
+    volumes:
+      - /run/user/1000/docker.sock:/var/run/docker.sock
+      - ./portainer_data:/data
+    ports:
+      - 8000:8000
+      - 9443:9443
+      - 9000:9000
+

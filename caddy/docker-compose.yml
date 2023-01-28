@@ -1,0 +1,14 @@
+version: '3'
+services:
+  caddy:
+     image: caddy:alpine
+     restart: always
+     container_name: caddy
+     ports:
+       - 80:80
+       - 443:443
+       - 443:443/udp
+     volumes:
+       - ./config:/config
+       - ./data:/data
+       - ./site:/srv
