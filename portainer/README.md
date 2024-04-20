@@ -1,7 +1,7 @@
 # Installation
 
 ```
-git clone https://github.com/atareao/self-hosted.git
+git clone https://github.com/diegox8x/self-hosted.git
 cd sain-dest/portainer
 ```
 
