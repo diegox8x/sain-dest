@@ -9,4 +9,7 @@ services:
       - TZ=Etc/UTC
     Volumes:
       - /path/to/heimdall/config:/config
+    ports:
+      - 85:80
+      - 443:443
     restart: unless-stopped
